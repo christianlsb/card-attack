@@ -1,8 +1,0 @@
-.gridCards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  li {
-    /* max-width: 25%; */
-  }
-}
