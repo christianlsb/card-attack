@@ -12,9 +12,11 @@ const Sidebar = () => {
               <a href="/cartas">Cartas</a>
             </li>
             <li>
-              <a href="/">Decks</a>
+              <a href="/decks">Decks</a>
             </li>
-            <li>Loja</li>
+            <li>
+              <a href="/loja">Loja</a>
+            </li>
           </ul>
         </nav>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./assets/styles.css";
-import { Cards, Home } from "./screens";
+import { Cards, Decks, Home, Store } from "./screens";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,6 +11,14 @@ const router = createBrowserRouter([
   {
     path: "/cartas",
     element: <Cards />,
+  },
+  {
+    path: "/decks",
+    element: <Decks />,
+  },
+  {
+    path: "/loja",
+    element: <Store />,
   },
 ]);
 

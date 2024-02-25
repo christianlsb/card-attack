@@ -1,7 +1,7 @@
 import { Sidebar } from "../components";
 import st from "../assets/styles/Home.module.css";
 
-const home = () => {
+const Home = () => {
   return (
     <>
       <div className="grid">
@@ -22,4 +22,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

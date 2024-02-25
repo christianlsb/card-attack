@@ -22,7 +22,10 @@ const Cards = () => {
     <>
       <div className="grid">
         <Sidebar />
-        <h1>Suas Cartas</h1>
+        <div>
+          <h1>Suas Cartas</h1>
+          <p></p>
+        </div>
       </div>
     </>
   );
