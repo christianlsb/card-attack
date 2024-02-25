@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import api from "./api";
-import { Sidebar } from "./components";
-import st from "./assets/styles/Home.module.css";
+import api from "../api";
+import { Sidebar } from "../components";
+import st from "../assets/styles/Home.module.css";
 interface Card {
   id: number;
   card: string;
