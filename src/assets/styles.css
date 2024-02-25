@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kode Mono", monospace;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
 }
-/* 
+
 .grid {
-  max-width: 1404px;
-  padding: 0 20px;
-  margin: 0 auto;
-} */
+  display: flex;
+}

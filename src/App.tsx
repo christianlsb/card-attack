@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "./api";
 import { Sidebar } from "./components";
+import st from "./assets/styles/Home.module.css";
 interface Card {
   id: number;
   card: string;
@@ -20,15 +21,21 @@ function App() {
     });
   }, []);
 
-  console.log(cards);
   return (
     <>
       <div className="grid">
         <Sidebar />
-        <h1>CardAttack</h1>
-        {cards.map(({ id, card }) => (
-          <p key={id}>{card}</p>
-        ))}
+        <div className={st.container}>
+          <h1>CardAttack</h1>
+          <p></p>
+          <nav>
+            <ul>
+              <li>
+                <button>Iniciar Jogo</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </>
   );
