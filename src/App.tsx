@@ -1,20 +1,35 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { invoke } from "@tauri-apps/api/tauri";
-import "./App.css";
+import { useEffect, useState } from "react";
+import api from "./api";
+import { Sidebar } from "./components";
+interface Card {
+  id: number;
+  card: string;
+  power: number;
+  tier: string;
+  hp: number;
+  defense: number;
+  physical_attack: number;
+}
 
 function App() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const [cards, setCards] = useState<Card[]>([]);
 
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    setGreetMsg(await invoke("greet", { name }));
-  }
+  useEffect(() => {
+    api.get("/cards").then((response) => {
+      setCards(response.data);
+    });
+  }, []);
 
+  console.log(cards);
   return (
     <>
-      <h1>CardAttack</h1>
+      <div className="grid">
+        <Sidebar />
+        <h1>CardAttack</h1>
+        {cards.map(({ id, card }) => (
+          <p key={id}>{card}</p>
+        ))}
+      </div>
     </>
   );
 }
