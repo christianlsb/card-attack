@@ -1,26 +1,7 @@
-import { useEffect, useState } from "react";
-import api from "../api";
 import { Sidebar } from "../components";
 import st from "../assets/styles/Home.module.css";
-interface Card {
-  id: number;
-  card: string;
-  power: number;
-  tier: string;
-  hp: number;
-  defense: number;
-  physical_attack: number;
-}
 
-function App() {
-  const [cards, setCards] = useState<Card[]>([]);
-
-  useEffect(() => {
-    api.get("/cards").then((response) => {
-      setCards(response.data);
-    });
-  }, []);
-
+const home = () => {
   return (
     <>
       <div className="grid">
@@ -39,6 +20,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
-export default App;
+export default home;
