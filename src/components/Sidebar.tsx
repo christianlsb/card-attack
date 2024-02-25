@@ -1,7 +1,8 @@
+import st from "../assets/styles/Sidebar.module.css";
 const Sidebar = () => {
   return (
     <>
-      <div>
+      <div className={st.container}>
         <nav>
           <ul>
             <li>Cartas</li>
