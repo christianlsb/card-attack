@@ -5,8 +5,15 @@ const Sidebar = () => {
       <div className={st.container}>
         <nav>
           <ul>
-            <li>Cartas</li>
-            <li>Descks</li>
+            <li>
+              <a href="/">Jogar</a>
+            </li>
+            <li>
+              <a href="/cartas">Cartas</a>
+            </li>
+            <li>
+              <a href="/">Decks</a>
+            </li>
             <li>Loja</li>
           </ul>
         </nav>

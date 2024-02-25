@@ -14,14 +14,16 @@
       flex-direction: column;
       gap: 30px;
       li {
-        font-size: 20px;
-        color: white;
-        font-weight: 700;
-        cursor: pointer;
-        text-transform: uppercase;
-        &:hover {
-          color: #8b20ac;
-          transition: 0.3s;
+        a {
+          font-size: 20px;
+          color: white;
+          font-weight: 700;
+          cursor: pointer;
+          text-transform: uppercase;
+          &:hover {
+            color: #8b20ac;
+            transition: 0.3s;
+          }
         }
       }
     }
