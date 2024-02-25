@@ -4,9 +4,9 @@ import st from "../assets/styles/Home.module.css";
 const Home = () => {
   return (
     <>
-      <div className="grid">
+      <div className="area">
         <Sidebar />
-        <div className={st.container}>
+        <div className="container">
           <h1>CardAttack</h1>
           <p></p>
           <nav>

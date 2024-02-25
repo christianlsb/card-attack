@@ -1,0 +1,14 @@
+.container {
+  max-width: 300px;
+}
+.content {
+  h2 {
+    height: 62px;
+  }
+  p {
+  }
+  .tier {
+  }
+  .power {
+  }
+}

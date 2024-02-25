@@ -3,9 +3,9 @@ import { Sidebar } from "../components";
 const Decks = () => {
   return (
     <>
-      <div className="grid">
+      <div className="area">
         <Sidebar />
-        <div>
+        <div className="container">
           <h1>Decks</h1>
           <p></p>
         </div>

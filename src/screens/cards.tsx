@@ -1,28 +1,14 @@
-import { Sidebar } from "../components";
+import { Card, Sidebar } from "../components";
 import { useEffect, useState } from "react";
 import api from "../api";
-interface Card {
-  id: number;
-  card: string;
-  power: number;
-  tier: string;
-  hp: number;
-  defense: number;
-  physical_attack: number;
-}
-const Cards = () => {
-  const [cards, setCards] = useState<Card[]>([]);
+import st from "../assets/styles/Cards.module.css";
 
-  useEffect(() => {
-    api.get("/cards").then((response) => {
-      setCards(response.data);
-    });
-  }, []);
+const Cards = () => {
   return (
     <>
-      <div className="grid">
+      <div className="area">
         <Sidebar />
-        <div>
+        <div className="container">
           <h1>Suas Cartas</h1>
           <p></p>
         </div>

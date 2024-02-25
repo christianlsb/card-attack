@@ -1,7 +1,8 @@
 .container {
   display: flex;
+  position: fixed;
   width: 10vw;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   background: #1a151d;
